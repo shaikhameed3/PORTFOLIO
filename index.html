@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shaik Abdul Hameed | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 50px;
+      background: #020617;
+      position: sticky;
+      top: 0;
+    }
+
+    header h1 {
+      color: #38bdf8;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(135deg, #3b82f6, #9333ea);
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      background: white;
+      color: black;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn-blue {
+      background: #38bdf8;
+      color: white;
+    }
+
+    section {
+      padding: 60px 50px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #38bdf8;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+    }
+
+    .contact p {
+      text-align: center;
+      margin: 8px;
+    }
+
+    a.link {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Hameed</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Shaik Abdul Hameed 👋</h2>
+  <p>AI Enthusiast | Software Developer</p>
+
+  <div>
+    <a href="#projects" class="btn">View Projects</a>
+    <a href="resume.pdf" download class="btn btn-blue">Download Resume</a>
+    <a href="resume.pdf" target="_blank" class="btn">View Resume</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p style="text-align:center; max-width:800px; margin:auto;">
+    Ambitious Computer Science undergraduate with a strong interest in Artificial Intelligence and software development.
+    Experienced in building intelligent, real-time applications using machine learning and computer vision techniques.
+    Passionate about solving real-world problems and continuously learning new technologies.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card">Java, Python, C</div>
+    <div class="card">HTML, CSS, JavaScript</div>
+    <div class="card">SQL, DBMS</div>
+    <div class="card">Data Structures & Algorithms</div>
+    <div class="card">OOP, Operating Systems</div>
+    <div class="card">Git, GitHub, VS Code</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Real-Time Facial Recognition</h3>
+      <p>Built using Python, OpenCV, dlib, CNN & Flask for real-time face detection.</p>
+    </div>
+
+    <div class="card">
+      <h3>Missing Child Identification</h3>
+      <p>AI system using MTCNN, dlib, and KNN to identify missing children.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>B.Tech CSE</h3>
+      <p>Malla Reddy Engineering College (2022–2026)</p>
+    </div>
+
+    <div class="card">
+      <h3>Intermediate</h3>
+      <p>Narayana Junior College (2020–2022)</p>
+    </div>
+  </div>
+</section>
+
+<section id="certifications">
+  <h2>Certifications</h2>
+  <div class="grid">
+    <div class="card">Azure AI Fundamentals</div>
+    <div class="card">Google Developer Student Clubs</div>
+    <div class="card">R Square Internship</div>
+    <div class="card">Skilltimate Internship</div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>Email: shaikhameed652@gmail.com</p>
+  <p>Phone: +91 6301706453</p>
+  <p>Location: Hyderabad, India</p>
+
+  <p>
+    <a href="./resume.pdf" target="_blank" class="link">View Resume</a> |
+    <a href="./resume.pdf" download class="link">Download Resume</a>
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 Shaik Abdul Hameed</p>
+</footer>
+
+</body>
+</html>
