@@ -1,480 +1,246 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Shaik Abdul Hameed | Portfolio</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      background: #0f172a;
-      color: white;
-    }
-
-    /* HEADER */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 50px;
-      background: #020617;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    header h1 {
-      color: #38bdf8;
-    }
-
-    nav a {
-      color: white;
-      margin-left: 20px;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      color: #38bdf8;
-    }
-
-    /* HERO */
-    .hero {
-      text-align: center;
-      padding: 100px 20px;
-      background: linear-gradient(135deg, #3b82f6, #9333ea);
-    }
-
-    .hero h2 {
-      font-size: 2.8rem;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 25px;
-    }
-
-    /* BUTTONS */
-    .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 25px;
-      background: white;
-      color: black;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      transform: translateY(-3px);
-      opacity: 0.9;
-    }
-
-    .btn-blue {
-      background: #38bdf8;
-      color: white;
-    }
-
-    /* SECTIONS */
-    section {
-      padding: 60px 50px;
-    }
-
-    h2 {
-      text-align: center;
-      margin-bottom: 30px;
-      color: #38bdf8;
-    }
-
-    /* GRID */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    /* CARDS */
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      border-radius: 10px;
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-8px);
-    }
-
-    .card h3 {
-      margin-bottom: 10px;
-      color: #38bdf8;
-    }
-
-    .card p {
-      line-height: 1.6;
-    }
-
-    /* ABOUT */
-    .about-text {
-      text-align: center;
-      max-width: 800px;
-      margin: auto;
-      line-height: 1.7;
-      font-size: 1.05rem;
-    }
-
-    /* CONTACT */
-    .contact p {
-      text-align: center;
-      margin: 10px;
-    }
-
-    a.link {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-
-    a.link:hover {
-      text-decoration: underline;
-    }
-
-    /* FOOTER */
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #020617;
-      margin-top: 20px;
-    }
-
-    /* MOBILE */
-    @media (max-width: 768px) {
-
-      header {
-        flex-direction: column;
-        padding: 20px;
-      }
-
-      nav {
-        margin-top: 15px;
-        text-align: center;
-      }
-
-      nav a {
-        display: inline-block;
-        margin: 5px 8px;
-      }
-
-      .hero {
-        padding: 80px 20px;
-      }
-
-      .hero h2 {
-        font-size: 2rem;
-      }
-
-      section {
-        padding: 50px 20px;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <!-- HEADER -->
-  <header>
-    <h1>Hameed</h1>
-
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-
-  <!-- HERO SECTION -->
-  <section class="hero">
-
-    <h2>Shaik Abdul Hameed 👋</h2>
-
-    <p>
-      Software Developer | Computer Science Graduate
-    </p>
-
-    <div>
-
-      <!-- VIEW RESUME -->
-      <a
-        href="YOUR_GOOGLE_DRIVE_RESUME_LINK"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn"
-      >
-        View Resume
-      </a>
-
-      <!-- DOWNLOAD RESUME -->
-      <a
-        href="YOUR_GOOGLE_DRIVE_RESUME_LINK"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn btn-blue"
-      >
-        Resume
-      </a>
-
-      <!-- PROJECTS -->
-      <a
-        href="#projects"
-        class="btn"
-      >
-        View Projects
-      </a>
-
-    </div>
-
-  </section>
-
-
-  <!-- ABOUT -->
-  <section id="about">
-
-    <h2>About Me</h2>
-
-    <p class="about-text">
-      Computer Science graduate with a strong foundation in programming,
-      software development, databases, and problem solving. Experienced in
-      building real-world applications using Python, Java, web technologies,
-      and machine learning. Passionate about learning new technologies and
-      developing practical software solutions.
-    </p>
-
-  </section>
-
-
-  <!-- SKILLS -->
-  <section id="skills">
-
-    <h2>Skills</h2>
-
-    <div class="grid">
-
-      <div class="card">
-        <h3>Programming</h3>
-        <p>Java, Python, C</p>
-      </div>
-
-      <div class="card">
-        <h3>Web Development</h3>
-        <p>HTML, CSS, JavaScript</p>
-      </div>
-
-      <div class="card">
-        <h3>Database</h3>
-        <p>SQL, DBMS</p>
-      </div>
-
-      <div class="card">
-        <h3>Computer Science</h3>
-        <p>Data Structures, Algorithms, OOP, Operating Systems</p>
-      </div>
-
-      <div class="card">
-        <h3>AI & Machine Learning</h3>
-        <p>Python, CNN, OpenCV, dlib, MTCNN, KNN</p>
-      </div>
-
-      <div class="card">
-        <h3>Tools</h3>
-        <p>Git, GitHub, VS Code, Linux, Jupyter Notebook</p>
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- PROJECTS -->
-  <section id="projects">
-
-    <h2>Projects</h2>
-
-    <div class="grid">
-
-      <div class="card">
-
-        <h3>Real-Time Facial Recognition</h3>
-
-        <p>
-          Built a real-time facial recognition application using Python,
-          OpenCV, dlib, CNN and Flask for face detection and recognition.
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <h3>Missing Child Identification</h3>
-
-        <p>
-          Developed an AI-based system using Python, MTCNN, dlib and KNN
-          to identify missing children through facial image matching.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- EDUCATION -->
-  <section id="education">
-
-    <h2>Education</h2>
-
-    <div class="grid">
-
-      <div class="card">
-
-        <h3>B.Tech - Computer Science & Engineering</h3>
-
-        <p>
-          Malla Reddy Engineering College
-        </p>
-
-        <p>
-          2022 - 2026
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <h3>Intermediate</h3>
-
-        <p>
-          Narayana Junior College
-        </p>
-
-        <p>
-          2020 - 2022
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- CERTIFICATIONS -->
-  <section id="certifications">
-
-    <h2>Certifications</h2>
-
-    <div class="grid">
-
-      <div class="card">
-        <h3>Azure AI Fundamentals</h3>
-      </div>
-
-      <div class="card">
-        <h3>Google Developer Student Clubs</h3>
-      </div>
-
-      <div class="card">
-        <h3>R Square Internship</h3>
-      </div>
-
-      <div class="card">
-        <h3>Skilltimate Internship</h3>
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- CONTACT -->
-  <section id="contact" class="contact">
-
-    <h2>Contact</h2>
-
-    <p>
-      Email:
-      <a
-        href="mailto:shaikhameed652@gmail.com"
-        class="link"
-      >
-        shaikhameed652@gmail.com
-      </a>
-    </p>
-
-    <p>
-      Phone:
-      <a
-        href="tel:+916301706453"
-        class="link"
-      >
-        +91 6301706453
-      </a>
-    </p>
-
-    <p>
-      Location: Hyderabad, India
-    </p>
-
-    <br>
-
-    <p>
-
-      <!-- VIEW RESUME FROM CONTACT -->
-      <a
-        href="YOUR_GOOGLE_DRIVE_RESUME_LINK"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="link"
-      >
-        View Resume
-      </a>
-
-    </p>
-
-  </section>
-
-
-  <!-- FOOTER -->
-  <footer>
-
-    <p>
-      © 2026 Shaik Abdul Hameed
-    </p>
-
-  </footer>
-
-</body>
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <title>Shaik Abdul Hameed | Portfolio</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ 
+  <style> 
+    * { 
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box; 
+      font-family: 'Segoe UI', sans-serif; 
+    } 
+ 
+    body { 
+      background: #0f172a; 
+      color: white; 
+    } 
+ 
+    header { 
+      display: flex; 
+      justify-content: space-between; 
+      padding: 20px 50px; 
+      background: #020617; 
+      position: sticky; 
+      top: 0; 
+    } 
+ 
+    header h1 { 
+      color: #38bdf8; 
+    } 
+ 
+    nav a { 
+      color: white; 
+      margin-left: 20px; 
+      text-decoration: none; 
+    } 
+ 
+    nav a:hover { 
+      color: #38bdf8; 
+    } 
+ 
+    .hero { 
+      text-align: center; 
+      padding: 100px 20px; 
+      background: linear-gradient(135deg, #3b82f6, #9333ea); 
+    } 
+ 
+    .hero h2 { 
+      font-size: 2.8rem; 
+    } 
+ 
+    .btn { 
+      display: inline-block; 
+      margin: 10px; 
+      padding: 12px 25px; 
+      background: white; 
+      color: black; 
+      border-radius: 6px; 
+      text-decoration: none; 
+      font-weight: bold; 
+    } 
+ 
+    .btn-blue { 
+      background: #38bdf8; 
+      color: white; 
+    } 
+ 
+    section { 
+      padding: 60px 50px; 
+    } 
+ 
+    h2 { 
+      text-align: center; 
+      margin-bottom: 30px; 
+      color: #38bdf8; 
+    } 
+ 
+    .grid { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+      gap: 20px; 
+    } 
+ 
+    .card { 
+      background: #1e293b; 
+      padding: 20px; 
+      border-radius: 10px; 
+      transition: 0.3s; 
+    } 
+ 
+    .card:hover { 
+      transform: translateY(-10px); 
+    } 
+ 
+    footer { 
+      text-align: center; 
+      padding: 20px; 
+      background: #020617; 
+    } 
+ 
+    .contact p { 
+      text-align: center; 
+      margin: 8px; 
+    } 
+ 
+    a.link { 
+      color: #38bdf8; 
+      text-decoration: none; 
+    } 
+  </style> 
+</head> 
+ 
+<body> 
+ 
+<header> 
+  <h1>Hameed</h1> 
+  <nav> 
+    <a href="#about">About</a> 
+    <a href="#skills">Skills</a> 
+    <a href="#projects">Projects</a> 
+    <a href="#education">Education</a> 
+    <a href="#contact">Contact</a> 
+  </nav> 
+</header> 
+ 
+<section class="hero"> 
+  <h2>Shaik Abdul Hameed 👋</h2> 
+  <p>AI Enthusiast | Software Developer</p> 
+ 
+  <div> 
+    <a href="#projects" class="btn">View Projects</a> 
+
+    <a 
+      href="https://drive.google.com/file/d/1gh4YyPBsHL6sGt-KzaaZ0pjWl4u-R0vm/view?usp=drive_link" 
+      target="_blank" 
+      class="btn btn-blue"
+    >
+      Download Resume
+    </a> 
+
+    <a 
+      href="https://drive.google.com/file/d/1gh4YyPBsHL6sGt-KzaaZ0pjWl4u-R0vm/view?usp=drive_link" 
+      target="_blank" 
+      class="btn"
+    >
+      View Resume
+    </a> 
+  </div> 
+</section> 
+ 
+<section id="about"> 
+  <h2>About Me</h2> 
+  <p style="text-align:center; max-width:800px; margin:auto;"> 
+    Ambitious Computer Science undergraduate with a strong interest in Artificial Intelligence and software development. 
+    Experienced in building intelligent, real-time applications using machine learning and computer vision techniques. 
+    Passionate about solving real-world problems and continuously learning new technologies. 
+  </p> 
+</section> 
+ 
+<section id="skills"> 
+  <h2>Skills</h2> 
+  <div class="grid"> 
+    <div class="card">Java, Python, C</div> 
+    <div class="card">HTML, CSS, JavaScript</div> 
+    <div class="card">SQL, DBMS</div> 
+    <div class="card">Data Structures & Algorithms</div> 
+    <div class="card">OOP, Operating Systems</div> 
+    <div class="card">Git, GitHub, VS Code</div> 
+  </div> 
+</section> 
+ 
+<section id="projects"> 
+  <h2>Projects</h2> 
+  <div class="grid"> 
+ 
+    <div class="card"> 
+      <h3>Real-Time Facial Recognition</h3> 
+      <p>Built using Python, OpenCV, dlib, CNN & Flask for real-time face detection.</p> 
+    </div> 
+ 
+    <div class="card"> 
+      <h3>Missing Child Identification</h3> 
+      <p>AI system using MTCNN, dlib, and KNN to identify missing children.</p> 
+    </div> 
+ 
+  </div> 
+</section> 
+ 
+<section id="education"> 
+  <h2>Education</h2> 
+  <div class="grid"> 
+    <div class="card"> 
+      <h3>B.Tech CSE</h3> 
+      <p>Malla Reddy Engineering College (2022–2026)</p> 
+    </div> 
+ 
+    <div class="card"> 
+      <h3>Intermediate</h3> 
+      <p>Narayana Junior College (2020–2022)</p> 
+    </div> 
+  </div> 
+</section> 
+ 
+<section id="certifications"> 
+  <h2>Certifications</h2> 
+  <div class="grid"> 
+    <div class="card">Azure AI Fundamentals</div> 
+    <div class="card">Google Developer Student Clubs</div> 
+    <div class="card">R Square Internship</div> 
+    <div class="card">Skilltimate Internship</div> 
+  </div> 
+</section> 
+ 
+<section id="contact" class="contact"> 
+  <h2>Contact</h2> 
+  <p>Email: shaikhameed652@gmail.com</p> 
+  <p>Phone: +91 6301706453</p> 
+  <p>Location: Hyderabad, India</p> 
+ 
+  <p> 
+    <a 
+      href="https://drive.google.com/file/d/1gh4YyPBsHL6sGt-KzaaZ0pjWl4u-R0vm/view?usp=drive_link" 
+      target="_blank" 
+      class="link"
+    >
+      View Resume
+    </a> | 
+
+    <a 
+      href="https://drive.google.com/file/d/1gh4YyPBsHL6sGt-KzaaZ0pjWl4u-R0vm/view?usp=drive_link" 
+      target="_blank" 
+      class="link"
+    >
+      Download Resume
+    </a> 
+  </p> 
+</section> 
+ 
+<footer> 
+  <p>© 2026 Shaik Abdul Hameed</p> 
+</footer> 
+ 
+</body> 
 </html>
